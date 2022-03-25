@@ -1,9 +1,11 @@
 ﻿#include <iostream>
 
 using namespace std;
-//The player who plays first:
+
+//The Player Plays First:
 int player = 1;
 
+//If this variable is true ,game continues
 bool isGameOn = true;
 
 //XOX Inputs Will Come here:
@@ -14,15 +16,16 @@ void ShowGround()
 {
     for (int i = 0; i < 9; i++)
     {
-        if (i % 3 == 0)
+        if (i % 3 == 0 && i != 0)
         {
-            cout << endl;
+            cout << "|" <<endl;
         }
-        cout << playground[i];
+        cout << "|" << playground[i];
     }
-    cout << endl;
+    cout <<"|" << endl;
 }
 
+//Is Game Ended Function
 int GameControl()
 {
     int xoFinder = 0;
@@ -49,7 +52,7 @@ int GameControl()
     }
     for (int i = 0; i < 9; i++)
     {
-        cout << xoFinder;
+        
         if (playground[i] == "x"|| playground[i] == "o")
         {
             xoFinder += 1;
@@ -68,7 +71,7 @@ int GameControl()
 
 int main()
 {
-
+    //Player Input
     int indexInput;
 
     while (isGameOn) 
