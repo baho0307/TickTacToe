@@ -56,15 +56,16 @@ int GameControl()
         if (playground[i] == "x"|| playground[i] == "o")
         {
             xoFinder += 1;
-            if(xoFinder == 8)
-            {
-                return 0;
-            }
-            else 
-            {
-                return 3;
-            }
+            
         }
+    }
+    if (xoFinder == 9)
+    {
+        return 0;
+    }
+    else
+    {
+        return 3;
     }
     
 }
