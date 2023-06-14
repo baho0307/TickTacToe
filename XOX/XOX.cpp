@@ -44,8 +44,7 @@ int GameControl()
     }
     if (xoFinder == 9)
         return 0;
-    else
-        return 3;
+    return 3;
 }
 
 int main()
