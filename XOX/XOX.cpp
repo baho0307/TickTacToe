@@ -39,7 +39,6 @@ int GameControl()
         return (playground[0]  == "x") || (playground[2] == "x") ? 1 : 2;
     for (int i = 0; i < 9; i++)
     {
-        
         if (playground[i] == "x"|| playground[i] == "o")
             xoFinder += 1;
     }
